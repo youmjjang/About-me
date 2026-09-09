@@ -130,6 +130,7 @@ dd { margin: 0; font-weight: 750; }
   box-shadow: 0 12px 30px rgba(42, 36, 25, .05);
   align-items: center;
 }
+.strength-panel[hidden] { display: none; }
 .panel-copy { display: grid; grid-template-columns: 110px 1fr; gap: 24px; align-items: start; }
 .panel-number { font-size: 4.8rem; font-weight: 900; letter-spacing: -.08em; color: #d7d1c6; line-height: 1; }
 .strength-panel h3 { margin: 0 0 16px; font-size: clamp(1.65rem, 3vw, 2.5rem); line-height: 1.15; letter-spacing: -.035em; }
