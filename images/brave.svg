@@ -1,0 +1,17 @@
+<svg width="420" height="280" viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">비행기와 여권 일러스트</title>
+<desc id="d">용감함과 새로운 경험을 상징하는 그림</desc>
+<rect width="420" height="280" rx="26" fill="#FFFDF9"/>
+<circle cx="317" cy="72" r="34" fill="#F1D7CA"/>
+<path d="M82 192C97 144 142 111 193 111H272C316 111 355 136 374 175L388 204H72L82 192Z" fill="#F1EEE7"/>
+<rect x="86" y="73" width="110" height="142" rx="18" fill="#D7653D"/>
+<rect x="102" y="93" width="78" height="22" rx="11" fill="#F6F0E7" opacity="0.9"/>
+<circle cx="141" cy="154" r="22" fill="#F6F0E7"/>
+<path d="M134 154H149" stroke="#D7653D" stroke-width="4" stroke-linecap="round"/>
+<path d="M141 147V161" stroke="#D7653D" stroke-width="4" stroke-linecap="round"/>
+<path d="M249 77L269 100L338 72" stroke="#20221F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M249 77L206 63" stroke="#20221F" stroke-width="8" stroke-linecap="round"/>
+<path d="M269 100L254 129" stroke="#20221F" stroke-width="8" stroke-linecap="round"/>
+<rect x="228" y="143" width="117" height="18" rx="9" fill="#D9D5CC"/>
+<rect x="228" y="171" width="88" height="14" rx="7" fill="#D9D5CC"/>
+</svg>

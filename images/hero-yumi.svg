@@ -1,0 +1,24 @@
+<svg width="640" height="520" viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">노트북과 보안 화면 앞에 앉아 있는 인물 일러스트</title>
+<desc id="desc">공부하고 탐구하는 분위기를 담은 자기소개용 일러스트</desc>
+<rect width="640" height="520" rx="36" fill="#F6F0E7"/>
+<circle cx="515" cy="104" r="52" fill="#F1D7CA"/>
+<circle cx="126" cy="122" r="36" fill="#E6E1D7"/>
+<path d="M94 402C118 348 174 312 235 312H366C425 312 478 347 503 398L519 432H79L94 402Z" fill="#D7653D" opacity="0.15"/>
+<rect x="157" y="173" width="328" height="212" rx="24" fill="#FFFDF9" stroke="#D9D5CC" stroke-width="2"/>
+<rect x="180" y="196" width="164" height="112" rx="16" fill="#1F2420"/>
+<rect x="356" y="196" width="104" height="28" rx="14" fill="#F1EEE7"/>
+<rect x="356" y="236" width="86" height="14" rx="7" fill="#E7E1D6"/>
+<rect x="356" y="260" width="76" height="14" rx="7" fill="#E7E1D6"/>
+<rect x="356" y="284" width="64" height="14" rx="7" fill="#E7E1D6"/>
+<circle cx="248" cy="251" r="28" fill="#D7653D"/>
+<path d="M248 233V269" stroke="#FFFDF9" stroke-width="8" stroke-linecap="round"/>
+<path d="M230 251H266" stroke="#FFFDF9" stroke-width="8" stroke-linecap="round"/>
+<path d="M201 322H443" stroke="#D9D5CC" stroke-width="2"/>
+<ellipse cx="322" cy="449" rx="157" ry="18" fill="#D9D5CC" opacity="0.6"/>
+<rect x="238" y="60" width="164" height="90" rx="24" fill="#20221F"/>
+<text x="320" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFDF9">WHY?</text>
+<text x="320" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#C8CBC4">직접 확인하고 배우는 중</text>
+<circle cx="88" cy="298" r="22" fill="#20221F" opacity="0.08"/>
+<circle cx="535" cy="316" r="16" fill="#D7653D" opacity="0.18"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="420" height="280" viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">카페와 두 사람 일러스트</title>
+<desc id="d">주체성과 배려를 상징하는 그림</desc>
+<rect width="420" height="280" rx="26" fill="#FFFDF9"/>
+<rect x="37" y="62" width="346" height="145" rx="22" fill="#F1EEE7"/>
+<rect x="58" y="88" width="68" height="88" rx="12" fill="#20221F" opacity="0.85"/>
+<rect x="145" y="88" width="90" height="18" rx="9" fill="#D9D5CC"/>
+<rect x="145" y="119" width="122" height="14" rx="7" fill="#D9D5CC"/>
+<rect x="145" y="145" width="98" height="14" rx="7" fill="#D9D5CC"/>
+<circle cx="299" cy="120" r="22" fill="#D7653D"/>
+<path d="M283 155C283 146.163 290.163 139 299 139V139C307.837 139 315 146.163 315 155V171H283V155Z" fill="#20221F"/>
+<circle cx="350" cy="120" r="22" fill="#D9A38F"/>
+<path d="M334 155C334 146.163 341.163 139 350 139V139C358.837 139 366 146.163 366 155V171H334V155Z" fill="#5D594F"/>
+<path d="M294 99C300 87 317 83 329 90" stroke="#20221F" stroke-width="4" stroke-linecap="round"/>
+<path d="M342 92L353 103L371 81" stroke="#D7653D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="98" y="214" width="224" height="16" rx="8" fill="#E6E1D7"/>
+</svg>
