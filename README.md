@@ -4,7 +4,6 @@
 - `index.html`
 - `styles.css`
 - `script.js`
-- `images/` — 페이지용 자체 제작 SVG 일러스트
 - `QA_CHECKLIST.md` — 과제 검수 기록
 
 ## 실행
@@ -23,6 +22,7 @@
 - 마우스 클릭 + 키보드 Enter/Space 지원
 - 탭 간 방향키 이동 지원
 - 시맨틱 HTML, 대체텍스트, skip link 포함
+- 보안 분석 기록을 모티프로 한 `PROFILE TRACE` 디자인
 
 ## 제출
 - 공개 결과물은 위 GitHub Pages 주소를 사용합니다.
