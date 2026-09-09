@@ -10,6 +10,10 @@
 ## 실행
 `index.html`을 브라우저에서 열면 됩니다.
 
+## 공개 페이지
+- GitHub Pages: https://youmjjang.github.io/About-me/
+- GitHub 저장소: https://github.com/youmjjang/About-me
+
 ## 과제 체크
 - 공개 가능한 정보만 사용
 - 핵심 특징 3개와 실제 경험 연결
@@ -20,8 +24,6 @@
 - 탭 간 방향키 이동 지원
 - 시맨틱 HTML, 대체텍스트, skip link 포함
 
-## 아직 제출 전에 필요한 것
-1. GitHub 저장소에 업로드
-2. GitHub Pages/Vercel/Netlify 중 하나로 공개 배포
-3. 새 시크릿 창에서 공개 URL 확인
-4. 제출할 때 저장소 홈 주소가 아니라 **full commit이 들어간 고정 URL** 사용
+## 제출
+- 공개 결과물은 위 GitHub Pages 주소를 사용합니다.
+- 소스는 저장소 홈 주소 대신 제출 시점의 **full commit이 들어간 고정 URL**을 사용합니다.
