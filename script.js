@@ -35,3 +35,12 @@ tabs.forEach((tab, index) => {
     activateTab(tabs[nextIndex]);
   });
 });
+
+const imageDialog=document.querySelector('.image-dialog');
+document.querySelectorAll('.shot-open').forEach(button=>button.addEventListener('click',()=>{
+ const source=button.querySelector('img'); const target=document.querySelector('#expanded-image');
+ target.src=source.src;target.alt=source.alt;document.querySelector('#image-label').textContent=source.alt;
+ imageDialog.showModal();
+}));
+document.querySelector('#close-image').addEventListener('click',()=>imageDialog.close());
+imageDialog.addEventListener('click',e=>{if(e.target===imageDialog){const r=imageDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)imageDialog.close();}});

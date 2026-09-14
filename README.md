@@ -9,7 +9,8 @@
 - NexusGuard Endpoint Agent: 팀 전체와 담당 모듈 범위 구분
 - LogSentinel: 인증 로그 탐지·위험도·오류 해결
 - Mini SOC: 승인·대응 시뮬레이션·기록 흐름
-- File Integrity Monitor와 대학 캡스톤 보조 경험
+- 대학 캡스톤: 도보 이동 시간 계산 앱 (화면 재구성 목업)
+- File Integrity Monitor: 작은 보조 프로젝트 카드
 - 기술 적용 맥락, 강점 탭, 경험 기록
 
 ## 실행
@@ -24,3 +25,10 @@
 
 ## 수정
 index.html: 내용 / styles.css: 디자인 / script.js: 접근성 강점 탭
+
+## 화면 자료 (2026-09-14)
+- NexusGuard: 원본 대시보드에 합성 테스트 이벤트 15건을 공급해 실제 규칙 엔진으로 처리한 화면. 운영 사고 수치가 아닙니다.
+- LogSentinel / File Integrity Monitor: 샘플 입력으로 직접 실행한 화면.
+- Mini SOC: 실행 로그 원문 발췌.
+- 대학 캡스톤: 기존 설명을 토대로 image_gen으로 만든 앱 화면 재구성. 실제 원본 캡처가 아니며 지도·수치는 예시입니다.
+- 이미지는 클릭해 확대할 수 있습니다. 학력·교육 전용 섹션은 제외했습니다.
