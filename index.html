@@ -68,17 +68,7 @@
 <div class="project-topline"><span>PROJECT 03 / PERSONAL</span><span class="status-pill">실제 Nginx 로그 지속 감시 · 대시보드</span></div>
 <div class="project-layout">
 <div class="project-intro"><h3>Mini SOC</h3><p class="project-lead">탐지 다음의 과정까지<br/>하나의 흐름으로.</p><p>로그를 읽고 경보를 만든 뒤 위험도 판단·승인·대응 시뮬레이션·사건 저장·대시보드·보고서까지 이어지는 미니 보안관제 프로젝트입니다. 샘플 로그뿐 아니라 Docker Nginx의 access.log에 새로 추가되는 요청을 지속 감시하도록 확장했습니다.</p><ul class="tech-tags"><li>Python</li><li>Flask REST API</li><li>Docker · Nginx</li><li>JSON</li><li>Markdown</li></ul><a class="text-link" href="https://github.com/youmjjang/mini-soc-security-monitoring" rel="noopener noreferrer" target="_blank">소스·데모 실행 방법 ↗</a><div class="role-note"><strong>2026.09.15 실행 확인</strong>샘플 로그 11건 → 경보 6건<br/>실제 Nginx 404 요청 → http_error 자동 탐지 → 대시보드 반영</div></div>
-<div class="project-evidence"><section aria-label="Mini SOC 실제 실행 로그 발췌" class="run-record"><header><strong>MINI SOC / LIVE RUN RECORD</strong><span>2026.09.15 · Nginx access.log 지속 감시</span></header><div class="run-stats"><div><b>11</b><span>샘플 입력 이벤트</span></div><div><b>6</b><span>샘플 탐지 경보</span></div><div><b>LIVE</b><span>Nginx 로그 감시</span></div></div><pre>[Live Monitor] 감시 시작: logs/access.log
-[Live Monitor] 읽기 기준: 새로 추가되는 줄부터
-
-브라우저 요청: /abc123 → Nginx 404
-[탐지] http_error / 172.19.0.1
-[판단] severity=low tool=watch
-[서버] POST /alert -&gt; 201
-
-Dashboard
-전체 사건 · HIGH / MEDIUM / LOW
-주요 공격 IP · 최근 사건 · 대응 결과</pre><footer>Docker Nginx에서 새로 생성된 access.log를 감시해 404 요청이 자동 탐지되고, Flask Alert Server를 거쳐 대시보드에 반영되는 흐름을 직접 확인했습니다.</footer></section>
+<div class="project-evidence"><figure class="project-screenshot"><button aria-label="Mini SOC 실제 대시보드 실행 화면 크게 보기" class="shot-open" type="button"><img alt="Mini SOC 실제 대시보드 실행 화면" loading="lazy" src="assets/minisoc-dashboard-20260915.webp"/></button><figcaption><b class="capture-tag">실제 실행 화면</b>Mini SOC Dashboard · 전체 사건 13건 · HIGH 4 / MEDIUM 6 / LOW 3 · 2026.09.15<span>화면을 누르면 크게 볼 수 있습니다 ↗</span></figcaption></figure>
 <ol class="pipeline-list"><li><span>01</span><div><strong>실제 로그 지속 감시</strong><p>Docker Nginx access.log의 새 줄을 증분으로 읽어 이벤트화</p></div></li><li><span>02</span><div><strong>시간창 기반 이상행위 탐지</strong><p>HTTP Error · Brute Force · Password Spraying · Night Login</p></div></li><li><span>03</span><div><strong>위험도 판단 · HIGH 승인</strong><p>LLM 미설정·실패 시 규칙 기반 fallback, 고위험 대응 전 승인</p></div></li><li><span>04</span><div><strong>사건 기록 · 대시보드 · 보고서</strong><p>incidents.json, Flask 대시보드, Markdown 일일 보고서로 결과 보존</p></div></li></ol>
 <div class="decision-grid"><section><span>오탐 보완</span><h4>시간창 없는 탐지를 줄이다</h4><p>Password Spraying을 단순 다계정 누적이 아니라 300초 안에 서로 다른 계정 3개 이상 실패한 경우로 제한했습니다. Brute Force는 초 단위 시각도 처리하도록 보완했습니다.</p></section><section><span>실시간성</span><h4>한 번 읽고 끝나는 데모에서 지속 감시로</h4><p>기존 sample_server.log 1회 분석 외에 live_monitor.py를 추가해 실행 이후 새로 생기는 로그만 읽고, 동일 경보는 5분 쿨다운으로 반복 알림을 줄였습니다.</p></section></div>
 <details class="project-detail"><summary>실행 범위와 AI 활용 방식 보기</summary><div><p><strong>샘플 데모:</strong> sample_server.log의 이벤트 11건에서 HTTP Error, Brute Force, Password Spraying, Night Login 규칙으로 6개 경보가 생성되도록 구성했습니다. HIGH 경보는 승인 후 block_ip 대응을 시뮬레이션합니다.</p><p><strong>실제 로그 확인:</strong> Docker Nginx를 8081 포트로 실행하고 <code>run_live.py logs/access.log</code>로 지속 감시했습니다. 존재하지 않는 경로 요청으로 404 로그를 만든 뒤 http_error → watch → POST /alert 201 → 대시보드 반영 순서를 확인했습니다.</p><p><strong>범위:</strong> 계정 잠금과 IP 차단은 실제 시스템 변경이 아닌 시뮬레이션입니다. LLM API가 없거나 실패하면 규칙 기반 fallback을 사용하며, Slack Webhook이 없으면 알림 단계만 건너뜁니다.</p></div></details>
