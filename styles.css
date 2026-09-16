@@ -121,78 +121,78 @@ html{scroll-padding-top:94px}body{word-break:keep-all;overflow-wrap:break-word}a
 @media(max-width:720px){.support-card{grid-template-columns:100px 1fr;gap:15px;padding:18px;align-items:start}.support-copy h3{font-size:1rem}.support-copy .tech-tags{gap:4px}.support-copy p:not(.command){font-size:.76rem}}
 
 
-/* ===== Cream Coral refresh 2026-09-16 ===== */
+/* ===== Chocolate Brown refresh 2026-09-16 ===== */
 :root{
-  --bg:#FFF8F3;
+  --bg:#FBF9F6;
   --panel:#FFFFFF;
-  --panel-2:#FDF0EA;
-  --bg-deep:#FBE8DF;
-  --ink:#3E312D;
-  --paper-ink:#3E312D;
-  --muted:#806A62;
-  --line:#EAD9D2;
-  --line-soft:#F2E7E2;
-  --signal:#F28C7A;
-  --cyan:#A96A5C;
-  --orange:#DF7866;
+  --panel-2:#F3EEE9;
+  --bg-deep:#EEE7E1;
+  --ink:#2E2926;
+  --paper-ink:#2E2926;
+  --muted:#71665F;
+  --line:#E6DDD6;
+  --line-soft:#F1EBE6;
+  --signal:#7A5C4D;
+  --cyan:#8B6B5B;
+  --orange:#6F5042;
 }
 body{background:var(--bg);color:var(--ink)}
-.site-header{background:rgba(255,248,243,.94);border-bottom-color:var(--line);backdrop-filter:blur(14px)}
+.site-header{background:rgba(251,249,246,.94);border-bottom-color:var(--line);backdrop-filter:blur(14px)}
 .brand-mark{background:var(--signal);border-radius:50%}
 .header-github{padding:9px 15px;border:1px solid var(--line);border-radius:10px;background:#fff}
-.header-github:hover{background:#FFF2EC}
+.header-github:hover{background:#F6F1ED}
 .hero{background:var(--bg)}
 .hero h1 span,.command,.text-link,.map-item>span,.map-item>b,.flow-diagram small,.flow-diagram>span,.decision-grid section>span,.rule-row>b,.pipeline-list li>span,.capstone-process li>span,.closing-note strong{color:var(--signal)}
-.hero-text,.project-intro p,.decision-grid p,.support-card p:not(.command),.skills-table p,.closing-note .closing-body{color:#6B5B56}
+.hero-text,.project-intro p,.decision-grid p,.support-card p:not(.command),.skills-table p,.closing-note .closing-body{color:#71665F}
 .hero-actions{gap:10px}
 .action{border-radius:12px;border-color:var(--line);background:#fff;transition:transform .18s,box-shadow .18s,background .18s,border-color .18s}
-.action:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(99,66,55,.08)}
+.action:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(69,52,44,.08)}
 .action-primary{background:var(--signal);border-color:var(--signal);color:#fff}
-.action-primary:hover{background:#DF7866;border-color:#DF7866}
+.action-primary:hover{background:#654A3E;border-color:#654A3E}
 .blog-action{background:#fff}
 .hero-signals{border-color:var(--line);border-radius:14px;overflow:hidden;background:#fff}
 .hero-signals li{border-color:var(--line)}
-.hero-signals b{color:#DF7866}
-.system-card,.portfolio-map{background:#fff;border-color:var(--line);border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(99,66,55,.08)}
-.system-head,.system-foot{background:#FDF0EA;color:#806A62}
+.hero-signals b{color:#6F5042}
+.system-card,.portfolio-map{background:#fff;border-color:var(--line);border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(69,52,44,.08)}
+.system-head,.system-foot{background:#F3EEE9;color:#71665F}
 .map-item{border-color:var(--line-soft)}
-.map-item:hover{background:#FFF4EF}
+.map-item:hover{background:#F6F1ED}
 .profile-data{background:#fff}
 .profile-data>div{border-color:var(--line-soft)}
-.section-ink,.section-now{background:#FFF3ED}
-.projects-section{background:#FFF3ED}
+.section-ink,.section-now{background:#F3EEE9}
+.projects-section{background:#F3EEE9}
 .project{border-top-color:var(--ink)}
-.status-pill{border-color:#E6C9BF;border-radius:10px;color:#9B594B;background:#FFF0EA}
-.tech-tags li{background:#fff;border-color:var(--line);border-radius:9px;color:#6B5B56}
-.role-note{background:#FFF0EA;border-left-color:var(--signal);border-radius:0 12px 12px 0;color:#6B5B56}
+.status-pill{border-color:#DED0C6;border-radius:10px;color:#765747;background:#F1EAE5}
+.tech-tags li{background:#fff;border-color:var(--line);border-radius:9px;color:#71665F}
+.role-note{background:#F1EAE5;border-left-color:var(--signal);border-radius:0 12px 12px 0;color:#71665F}
 .flow-diagram,.analysis-board,.pipeline-list,.support-card,.education-grid article,.capstone-process{background:#fff;border-color:var(--line);border-radius:14px}
 .flow-diagram{overflow:hidden}
 .flow-diagram>div{border-radius:10px}
-.decision-grid section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 10px 28px rgba(99,66,55,.05)}
-.board-head,.risk-formula,.console-head,.console-foot{background:#FDF0EA}
+.decision-grid section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 10px 28px rgba(69,52,44,.055)}
+.board-head,.risk-formula,.console-head,.console-foot{background:#F3EEE9}
 .rule-row,.pipeline-list li,.project-detail,.skills-table article,.capstone-process li{border-color:var(--line-soft)}
-.project-screenshot{border-color:var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(99,66,55,.06)}
+.project-screenshot{border-color:var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(69,52,44,.06)}
 .project-screenshot figcaption{background:#fff}
-.capture-tag{color:#A85E4E}
-.support-card{box-shadow:0 10px 28px rgba(99,66,55,.045)}
+.capture-tag{color:#765747}
+.support-card{box-shadow:0 10px 28px rgba(69,52,44,.045)}
 .skills-table{border-top-color:var(--ink)}
-.evidence-workbench,.mission-console{border-color:var(--line);background:#fff;box-shadow:0 16px 40px rgba(99,66,55,.06);border-radius:16px;overflow:hidden}
+.evidence-workbench,.mission-console{border-color:var(--line);background:#fff;box-shadow:0 16px 40px rgba(69,52,44,.06);border-radius:16px;overflow:hidden}
 .strength-tabs{border-color:var(--line)}
 .tab{border-color:var(--line);border-radius:0}
-.tab:hover{background:#FFF4EF}
+.tab:hover{background:#F6F1ED}
 .tab.is-active{background:var(--signal);color:#fff}
 .evidence-grid{background:var(--line);border-color:var(--line);border-radius:12px;overflow:hidden}
 .evidence-grid section{background:#fff}
-.mission-featured{background:#FFF0EA;box-shadow:inset 4px 0 0 var(--signal)}
+.mission-featured{background:#F1EAE5;box-shadow:inset 4px 0 0 var(--signal)}
 .mission-badge{border-color:var(--signal);color:var(--signal);border-radius:9px}
 .site-footer{background:#fff;border-top-color:var(--line)}
 .image-dialog{border-color:var(--line);border-radius:14px}
-.image-dialog button{background:#FFF4EF;border-color:var(--line);border-radius:10px}
+.image-dialog button{background:#F6F1ED;border-color:var(--line);border-radius:10px}
 .run-record{border-radius:14px}
 summary{border-radius:8px}
 @media(max-width:720px){
   .header-github{padding:7px 10px;border-radius:9px}
   .decision-grid section{padding:17px}
 }
-/* ===== End Cream Coral refresh ===== */
+/* ===== End Chocolate Brown refresh ===== */
 
