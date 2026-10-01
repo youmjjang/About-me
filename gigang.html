@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GIGANG | 김유미 포트폴리오</title>
+<link rel="stylesheet" href="detail-base.css">
+<style>
+:root{--gd-paper:#fffdf8;--gd-bg:#f4f0e6;--gd-ink:#30352d;--gd-muted:#71766e;--gd-line:#d9d3c6;--gd-olive:#697052;--gd-olive2:#4e563c;--gd-brown:#8b6f58}
+body{background:var(--gd-bg);color:var(--gd-ink)}
+.gd-wrap{width:min(1100px,calc(100% - 28px));margin:28px auto 80px}
+.gd-back{margin-bottom:14px}
+.gd-card{background:var(--gd-paper);border:1px solid var(--gd-line);border-radius:22px;padding:30px;margin-bottom:18px;box-shadow:0 12px 30px rgba(70,62,48,.07)}
+.gd-hero{padding:38px 34px}
+.gd-kicker{font-size:13px;letter-spacing:.13em;color:var(--gd-muted);font-weight:800;margin:0 0 10px}
+.gd-hero h1{font-size:clamp(38px,6vw,64px);line-height:1;margin:0 0 12px}
+.gd-fullname{font-size:17px;color:var(--gd-brown);font-weight:750;margin:0 0 22px}
+.gd-lead{font-size:20px;line-height:1.7;max-width:900px}
+.gd-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.gd-chips span{border:1px solid var(--gd-line);background:#fff;border-radius:999px;padding:6px 10px;font-size:13px;font-weight:750}
+.gd-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gd-mini{border:1px solid var(--gd-line);border-radius:16px;background:#fff;padding:18px}
+.gd-mini h3{margin:0 0 8px;font-size:17px}
+.gd-mini p{margin:0;color:var(--gd-muted)}
+.gd-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-top:18px}
+.gd-flow span{min-height:86px;display:grid;place-items:center;text-align:center;border:1px solid var(--gd-line);border-radius:16px;background:#fff;padding:14px;font-weight:800}
+.gd-flow b{color:var(--gd-olive);font-size:22px}
+.gd-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gd-before,.gd-after{border:1px solid var(--gd-line);border-radius:17px;background:#fff;padding:20px}
+.gd-label{display:inline-block;border-radius:999px;padding:5px 9px;background:#ece8dc;font-size:12px;font-weight:800;margin-bottom:8px}
+.gd-after .gd-label{background:#e9efe3;color:#45513a}
+.gd-list{margin:10px 0 0;padding-left:20px}
+.gd-list li{margin:7px 0}
+.gd-gallery{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:24px}
+.gd-shot{margin:0;border:1px solid var(--gd-line);border-radius:18px;overflow:hidden;background:#fff}
+.gd-shot.wide{grid-column:1/-1}
+.gd-shot a{display:block;background:#0e1624;cursor:zoom-in}
+.gd-shot a:focus-visible{outline:3px solid var(--gd-olive);outline-offset:-3px}
+.gd-shot img{display:block;width:100%;height:auto;background:#0e1624}
+.gd-shot figcaption{padding:16px 20px;font-size:14px;line-height:1.6;color:var(--gd-muted);border-top:1px solid var(--gd-line)}
+.gd-role{border-left:4px solid var(--gd-olive);padding-left:16px}
+.gd-note{background:#f8f5ed;border:1px solid var(--gd-line);border-radius:14px;padding:14px 16px;color:var(--gd-muted)}
+.gd-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+@media(max-width:780px){
+ .gd-grid,.gd-compare,.gd-gallery{grid-template-columns:1fr}
+ .gd-shot.wide{grid-column:auto}
+ .gd-flow{grid-template-columns:1fr}
+ .gd-flow b{transform:rotate(90deg);justify-self:center}
+ .gd-card{padding:22px}
+ .gd-hero{padding:28px 22px}
+}
+</style>
+<style>body{background:#fbf9f6;color:#312821;font-family:Arial,"Malgun Gothic",sans-serif}a{color:#755341}.button{border-radius:10px;border-color:#ded3c9}.button.primary{background:#755341;color:white}.box{background:#fffdf9;border-color:#ded3c9}.muted{color:#796e65}h1{letter-spacing:-.04em}h2{color:#312821}.compare{grid-template-columns:repeat(2,minmax(0,1fr))!important}@media(max-width:600px){.compare{grid-template-columns:1fr!important}}</style></head>
+<body><nav style="width:min(1100px,calc(100% - 40px));margin:24px auto"><a class="button" href="index.html#projects">← ABOUT-ME · 프로젝트 목록</a></nav>
+<main class="gd-wrap">
+<a class="button gd-back" href="index.html#gigang">← 프로젝트로 돌아가기</a>
+
+<section class="gd-card gd-hero">
+<p class="gd-kicker">TEAM SECURITY PROJECT</p>
+<h1>GIGANG</h1>
+<p class="gd-fullname">Generative AI Inspection &amp; Governance Across Network Gateways</p>
+<p class="gd-lead"><strong>사내 사용자의 외부 AI·SaaS 접근, 파일 입력 시도, DB 접근 이벤트를 함께 수집하고 위험 신호를 연결해 관리자 대응까지 이어지도록 만든 보안 팀 프로젝트입니다.</strong></p>
+<div class="gd-chips"><span>Web / SaaS Events</span><span>DB Audit Log</span><span>Correlation</span><span>AI Governance</span><span>Endpoint Response</span></div>
+</section>
+
+<section class="gd-card">
+<p class="gd-kicker">01 · PROBLEM</p>
+<h2>단순히 사이트를 막는 것보다, 어떤 행동이 이어졌는지를 보고 싶었습니다</h2>
+<p>외부 생성형 AI나 SaaS 접속 자체만으로는 위험 행동인지 판단하기 어렵습니다. 그래서 웹 접속 기록만 따로 보는 대신, <strong>DB 조회 → 웹 접근 → 붙여넣기·파일 입력 시도</strong>처럼 서로 다른 이벤트를 연결해 먼저 확인해야 할 상황을 좁히는 방향으로 설계했습니다.</p>
+<div class="gd-grid">
+<div class="gd-mini"><h3>웹·외부 서비스</h3><p>외부 AI/SaaS 접속과 도메인 정보를 수집해 정책 상태와 함께 확인합니다.</p></div>
+<div class="gd-mini"><h3>DB 접근</h3><p>사내 DB 조회 이력을 수집해 어떤 자료가 조회되었는지 판단 흐름에 연결합니다.</p></div>
+<div class="gd-mini"><h3>단말 이벤트</h3><p>파일 선택·붙여넣기 등 외부 입력 시도를 감지해 서버 이벤트와 함께 봅니다.</p></div>
+<div class="gd-mini"><h3>관리자 대응</h3><p>Normal / Watch / Critical 상태와 인시던트 근거를 대시보드에서 확인하도록 구성했습니다.</p></div>
+</div>
+</section>
+
+<section class="gd-card">
+<p class="gd-kicker">02 · FLOW</p>
+<h2>프로젝트 전체 흐름</h2>
+<div class="gd-flow">
+<span>사용자 행동<br>웹 · DB · 파일 입력</span><b>→</b>
+<span>이벤트 수집<br>단말 · Railway · DB 로그</span><b>→</b>
+<span>규칙 · 상관분석<br>필요 시 AI 판단</span><b>→</b>
+<span>Normal / Watch / Critical<br>관리자 확인 · 대응</span>
+</div>
+<p class="gd-note" style="margin-top:16px">AI가 모든 이벤트를 처음부터 끝까지 결정하는 구조가 아니라, 알려진 정책과 이벤트 관계를 먼저 확인하고 <strong>추가 판단이 필요한 경우에만 AI 위험도 분석을 활용</strong>하는 방향으로 보완했습니다.</p>
+</section>
+
+<section class="gd-card">
+<p class="gd-kicker">03 · MY ROLE</p>
+<h2>내가 맡은 부분</h2>
+<div class="gd-role">
+<ul class="gd-list">
+<li><strong>서버·DB 연동:</strong> 웹 접근 이벤트와 DB 접근 로그가 판단 단계로 전달되도록 수집 흐름을 연결했습니다.</li>
+<li><strong>상관분석 흐름:</strong> DB에서 본 자료와 이후 외부 입력 시도를 별개 이벤트로 끝내지 않고 함께 확인할 수 있도록 흐름을 정리했습니다.</li>
+<li><strong>판단 구조 보완:</strong> 외부 사이트를 매번 AI에 맡기는 방식 대신 알려진 SaaS 정책과 규칙 기반 판단을 우선하도록 구조를 수정했습니다.</li>
+<li><strong>단말 대응 연결:</strong> 사용자 PC에서 외부 AI 사이트로 자료를 입력하려는 행동이 감지됐을 때 경고·차단 안내로 이어지는 흐름을 연결했습니다.</li>
+<li><strong>운영 흐름 정리:</strong> 사용자용 실행과 관리자 관제 흐름을 분리하고, 실제 시연에서 이벤트가 어디에서 들어와 어디로 전달되는지 확인할 수 있도록 정리했습니다.</li>
+</ul>
+</div>
+<p class="gd-note">대시보드 전체 UI를 혼자 만든 프로젝트가 아니라 <strong>팀 프로젝트</strong>이며, 이 페이지에서는 팀 전체 결과와 제가 맡은 서버·DB·이벤트 연동 부분을 구분해 적었습니다.</p>
+</section>
+
+<section class="gd-card">
+<p class="gd-kicker">04 · ITERATION</p>
+<h2>처음 구조에서 어떻게 바꿨는가</h2>
+<div class="gd-compare">
+<div class="gd-before">
+<span class="gd-label">초기</span>
+<h3>외부 사이트 위험도를 AI 판단에 크게 의존</h3>
+<p>접속한 도메인을 AI에 전달해 위험도를 판단하는 구조는 빠르게 구현할 수 있었지만, 이미 알고 있는 서비스까지 반복 호출할 수 있고 판단 근거가 시스템 정책과 분리되어 보이는 문제가 있었습니다.</p>
+</div>
+<div class="gd-after">
+<span class="gd-label">개선 후</span>
+<h3>정책·규칙 → 상관분석 → 필요한 경우 AI</h3>
+<p>승인된 SaaS와 알려진 정책을 먼저 적용하고, DB 조회·외부 입력 같은 이벤트 관계를 함께 확인한 뒤 미등록 서비스처럼 추가 판단이 필요한 경우에 AI를 활용하도록 역할을 줄였습니다.</p>
+</div>
+</div>
+<p class="gd-note" style="margin-top:14px">이 변경으로 AI는 시스템의 모든 결정을 대신하는 역할이 아니라, <strong>정책으로 바로 판단하기 어려운 부분을 보조하는 요소</strong>가 되도록 정리했습니다.</p>
+</section>
+
+<section class="gd-card">
+<p class="gd-kicker">05 · IMPLEMENTATION</p>
+<h2>실제 구현 화면</h2>
+<p>아래 이미지는 팀 프로젝트의 실제 실행·관제 화면입니다. 시연용 목업이 아니라 구현 과정에서 사용한 화면을 포트폴리오에 정리했습니다.</p>
+<div class="gd-gallery">
+<figure class="gd-shot wide"><a href="assets/gigang-overview-20261001.png" target="_blank" rel="noopener" aria-label="이미지 원본 크게 보기"><img src="assets/gigang-overview-20261001.png" alt="GIGANG 관리자 대시보드 구현 화면" loading="eager"></a><figcaption>GIGANG 관리자 대시보드 · 종합 관제 구현 화면</figcaption></figure>
+<figure class="gd-shot"><a href="assets/gigang-killchain-20261001.png" target="_blank" rel="noopener" aria-label="이미지 원본 크게 보기"><img src="assets/gigang-killchain-20261001.png" alt="외부 침투 및 침해사고 심층 분석 화면" loading="eager"></a><figcaption>킬체인 분석 · 공격 경로와 상관분석 판단 근거</figcaption></figure>
+<figure class="gd-shot"><a href="assets/gigang-governance-20261001.png" target="_blank" rel="noopener" aria-label="이미지 원본 크게 보기"><img src="assets/gigang-governance-20261001.png" alt="사내 섀도우 IT 및 생성형 AI 거버넌스 대시보드" loading="eager"></a><figcaption>AI·IT 거버넌스 · 외부 서비스 위험도와 승인·차단 관리</figcaption></figure>
+<figure class="gd-shot"><a href="assets/gigang-pipeline-20261001.png" target="_blank" rel="noopener" aria-label="이미지 원본 크게 보기"><img src="assets/gigang-pipeline-20261001.png" alt="중앙 서버 파이프라인 및 수집 이벤트 화면" loading="eager"></a><figcaption>중앙 서버 파이프라인 · 실시간 수집 이벤트와 DB 감사 로그</figcaption></figure>
+<figure class="gd-shot wide"><a href="assets/gigang-block-20261001.png" target="_blank" rel="noopener" aria-label="이미지 원본 크게 보기"><img src="assets/gigang-block-20261001.png" alt="외부 AI 사이트에 사내 자료 입력 시도를 감지한 GIGANG 차단 안내 화면" loading="eager"></a><figcaption>사내 자료의 외부 입력 시도 감지 후 사용자에게 표시되는 차단·안내 화면</figcaption></figure>
+</div>
+</section>
+
+<section class="gd-card">
+<p class="gd-kicker">06 · STACK &amp; LIMITS</p>
+<h2>사용 기술과 범위</h2>
+<div class="gd-grid">
+<div class="gd-mini"><h3>수집·서버</h3><p>Python · Flask · Railway · 이벤트 API</p></div>
+<div class="gd-mini"><h3>데이터</h3><p>MySQL · DB 접근 로그 · 이벤트 상관분석</p></div>
+<div class="gd-mini"><h3>단말·웹</h3><p>Chrome Extension · 사용자 PC 이벤트 감지 · 차단 안내</p></div>
+<div class="gd-mini"><h3>관제·판단</h3><p>Streamlit Dashboard · 정책 기반 분류 · Gemini 보조 판단</p></div>
+</div>
+<p class="gd-note" style="margin-top:16px"><strong>범위:</strong> 실제 기업 전체 보안 환경을 재현한 제품이 아니라 교육 팀 프로젝트의 테스트 환경에서 웹·DB·단말 이벤트가 하나의 관제 흐름으로 연결되는지를 구현하고 검증한 결과물입니다.</p>
+<div class="gd-actions"><a class="button primary" href="index.html#gigang">포트폴리오로 돌아가기</a></div>
+</section>
+</main>
+</body>
+</html>

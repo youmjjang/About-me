@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>T10 연구 보고서 | 김유미</title>
+<link rel="stylesheet" href="detail-base.css">
+<style>
+.p{width:min(980px,calc(100% - 28px));margin:28px auto 70px}
+.box{background:#fffdf8;border:1px solid #d9d3c6;border-radius:20px;padding:28px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.grid div,.compare div{border:1px solid #d9d3c6;border-radius:14px;padding:16px;background:#fff}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.label{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:4px 9px;background:#ece8dc;margin-bottom:8px}
+.muted{color:#71766e}.arrow{font-weight:800}
+@media(max-width:760px){.grid{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+</style>
+<style>body{background:#fbf9f6;color:#312821;font-family:Arial,"Malgun Gothic",sans-serif}a{color:#755341}.button{border-radius:10px;border-color:#ded3c9}.button.primary{background:#755341;color:white}.box{background:#fffdf9;border-color:#ded3c9}.muted{color:#796e65}h1{letter-spacing:-.04em}h2{color:#312821}.compare{grid-template-columns:repeat(2,minmax(0,1fr))!important}@media(max-width:600px){.compare{grid-template-columns:1fr!important}}</style></head>
+<body><nav style="width:min(1100px,calc(100% - 40px));margin:24px auto"><a class="button" href="index.html#projects">← ABOUT-ME · 프로젝트 목록</a></nav>
+<main class="p">
+<a class="button" href="http-status-pattern-analyzer.html">← 프로젝트 상세로 돌아가기</a>
+
+<section class="box">
+<p class="muted">T10 RESEARCH · BR-B APPLICATION</p>
+<h1>웹 서버 로그에서 HTTP 상태코드 유형별 시간 구간 및 경고 임계값 설정에 따른 이상 패턴 탐지 성능 비교</h1>
+<p class="lead"><strong>같은 HTTP 오류라도 의미가 다르기 때문에, 상태코드 유형별로 시간 구간과 반복 횟수 기준을 따로 비교한 모의 웹 로그 연구입니다.</strong></p>
+<p>이 연구 결과는 이후 <strong>HTTP Status Pattern Analyzer</strong>의 기본 분석 규칙으로 연결했습니다.</p>
+</section>
+
+<section class="box">
+<h2>연구 질문을 어떻게 좁혔는가</h2>
+<div class="compare">
+<div><span class="label">초기 실험</span><h3>4xx 전체를 하나의 그룹으로 분석</h3><p>처음에는 4xx 오류 전체에 동일한 시간 구간과 반복 횟수 기준을 적용했습니다. 이 방식은 단순했지만 401/403, 404, 429가 서로 다른 상황을 의미한다는 차이를 반영하기 어려웠습니다.</p></div>
+<div><span class="label">최종 실험</span><h3>상태코드 유형을 분리해 다시 비교</h3><p>401/403, 404, 429에 5xx까지 추가하고, 각 유형에서 30·60·120초 × 3·5·8·12회를 각각 비교했습니다. 총 48개 조건을 계산해 유형별 차이를 확인했습니다.</p></div>
+</div>
+</section>
+
+<section class="box">
+<h2>실험 규모</h2>
+<div class="grid">
+<div><strong>4개 유형</strong><br><span class="muted">401/403 · 404 · 429 · 5xx</span></div>
+<div><strong>1,600개 시나리오</strong><br><span class="muted">유형별 정상 200 + 이상 200</span></div>
+<div><strong>8,449건 이벤트</strong><br><span class="muted">고정 난수 시드로 생성</span></div>
+<div><strong>48개 조건</strong><br><span class="muted">3개 시간 구간 × 4개 임계값 × 4개 유형</span></div>
+</div>
+</section>
+
+<section class="box">
+<h2>유형별로 가장 높은 F1을 보인 기준</h2>
+<div class="grid">
+<div><b>401/403</b><br>60초 · 5회<br><span class="muted">F1 0.950</span></div>
+<div><b>404</b><br>120초 · 8회<br><span class="muted">F1 0.950</span></div>
+<div><b>429</b><br>60초 · 3회<br><span class="muted">F1 0.961</span></div>
+<div><b>5xx</b><br>30초 · 3회<br><span class="muted">F1 0.934</span></div>
+</div>
+<p class="muted">이 값은 실제 서비스의 절대적 최적값이 아니라, 연구용 모의 데이터에서 같은 조건으로 비교했을 때 나온 결과입니다.</p>
+</section>
+
+<section class="box">
+<h2>무엇을 확인했는가</h2>
+<ul>
+<li>상태코드 유형이 다르면 가장 높은 F1을 보이는 시간 구간·반복 횟수 조합도 달라질 수 있었습니다.</li>
+<li>낮은 임계값에서는 탐지율이 높아지는 대신 오탐이 증가하고, 높은 임계값에서는 오탐이 줄지만 일부 이상 시나리오를 놓치는 절충 관계가 나타났습니다.</li>
+<li>따라서 하나의 반복 횟수를 모든 HTTP 오류에 동일하게 적용하기보다, 오류의 의미와 정상 발생 빈도를 함께 고려해야 한다고 판단했습니다.</li>
+</ul>
+</section>
+
+<section class="box">
+<h2>연구 결과를 앱으로 어떻게 옮겼는가</h2>
+<p>논문에서 숫자만 비교하고 끝내지 않고, 유형별 선택 기준을 실제 로그 분석 기능으로 연결했습니다.</p>
+<p><strong>연구 결과</strong> <span class="arrow">→</span> 유형별 시간 구간·임계값 <span class="arrow">→</span> 실제 로그 반복 패턴 계산 <span class="arrow">→</span> 먼저 확인할 Host/IP와 이유 표시</p>
+<div class="actions">
+<a class="button primary" href="brb-app.html">웹 체험판 열기</a>
+<a class="button" href="downloads/HTTP_Status_Pattern_Analyzer_Windows_v6_1.zip" download="">프로그램 + 예제 다운로드 (ZIP)</a>
+</div>
+</section>
+
+<section class="box">
+<h2>연구의 한계</h2>
+<p>실제 운영 로그가 아닌 모의 웹 로그를 사용했기 때문에 결과를 실제 IDS·SIEM의 공격 탐지 성능과 동일하게 해석하지 않았습니다. 앱 역시 “공격자 확정”이 아니라 <strong>반복 오류가 집중된 로그를 먼저 검토하도록 좁혀주는 도구</strong>로 설계했습니다.</p>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import url("bra-base.css?v=20260929-2350");
+
+/* Use the full-resolution HTML image instead of legacy CSS previews. */
+.work-shot:has(img[src*="nexusguard-dashboard"]){
+  overflow:hidden!important;
+  background:#071421!important;
+}
+.work-shot:has(img[src*="nexusguard-dashboard"]) img{
+  content:normal!important;
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  clip-path:inset(4.8% 0 0);
+  transform:translateY(-4.8%)!important;
+  margin:0 0 -3.75%!important;
+  background:#071421!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.work-shot:has(img[src*="nexusguard-dashboard"]) figcaption,
+.work-shot:has(img[src*="nexusguard-dashboard"])::after{
+  display:none!important;
+}
+
+/* Keep the letter episode emphasized through wording, not bold styling. */
+.story-content p:nth-of-type(3) strong{
+  font-weight:inherit!important;
+  color:inherit!important;
+}
