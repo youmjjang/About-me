@@ -198,3 +198,9 @@ summary{border-radius:8px}
 
 
 .review-meta{font-size:.75rem;font-weight:700;color:#80624e;letter-spacing:.04em}.scope-note{font-size:.85rem;color:#796e65}.project-detail .clean-list{padding-left:22px;line-height:1.8}
+
+.mobile-capture{max-width:400px;margin:0 auto 26px}
+.mobile-capture img{width:100%;height:auto}
+.mobile-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+.mobile-gallery .mobile-capture{min-width:0;width:100%;margin:0 0 26px}
+@media(max-width:580px){.mobile-gallery{grid-template-columns:1fr}.mobile-gallery .mobile-capture{max-width:400px;margin-inline:auto}}
