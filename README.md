@@ -16,7 +16,7 @@
 
 ## 쉬엄쉬엄 실제 화면과 링크
 
-- **실행 사이트:** https://swieogalgot.onrender.com/
+- **실행 사이트:** https://swieogalgot.vercel.app/
 - **소스 저장소:** https://github.com/youmjjang/swieogalgot
 - **실제 아이폰 휴식공간 목록:** `assets/swieogalgot-iphone-list.png`
 - **실제 아이폰 보행 경로 화면:** `assets/swieogalgot-iphone-route.jpg`
